@@ -1,10 +1,17 @@
 # Simple Task (DOCKER)
 
 ## 1. Buatlah image dari aplikasi sederhana yang sudah dibuat
+Membuat Dockfile dengan vim, kemudian build menjadi image:
+
 IMAGE ID = 7de1fb9af381
+REPOSITORY dan TAG = <none>
 
 ## 2. Jalankan image tersebut sebagai container dan berjalan pada port 8081
-
+Membuat container dengan docker run :
+Container ID = f133ce1ee1b1   
+IMAGE = 7de1fb9af381                              
+COMMAND = "python3"
+NAME = tazkia
 
 ## 3. Berapakah IP docker container whoami?
 Berdasarkan docker inspeck, IP whoami adalah :
