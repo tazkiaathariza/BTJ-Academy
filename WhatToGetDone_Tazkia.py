@@ -1,7 +1,7 @@
 '''
-Just a coding practice for manipulate data.
+Just a coding practice for manipulating file and data.
 Tazkia
-Case : Make a list containing dict data >> deadline hour + what to do
+Case : Make a list containing dictionary data >> Activity, Deadline, and Status
 '''
 
 import json
@@ -80,7 +80,7 @@ while True:
     print("5. Exit")
    
 
-    choice = input("Enter your choice (1-4): ")
+    choice = input("Enter your choice (1-5): ")
 
     if choice == "1":
         add_list()
@@ -91,7 +91,7 @@ while True:
     elif choice == "4":
         change_status()
     elif choice == "5":
-        print("Exiting the Note App.")
+        print("Good bye! [EXITING]")
         break
     else:
-        print("Invalid choice. Please enter a number between 1 and 4.")
+        print("Invalid choice. Please enter a number between 1 and 5.")
