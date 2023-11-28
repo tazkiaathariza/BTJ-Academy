@@ -1,14 +1,36 @@
 # Simple Task (DOCKER)
 
 ## 1. Buatlah image dari aplikasi sederhana yang sudah dibuat
-Membuat Dockfile dengan vim, kemudian build menjadi image:
+Membuat Dockfile dengan vim, kemudian build menjadi image. Hasilnya adalah sebagai berikut:
 
 IMAGE ID = 7de1fb9af381
 
 REPOSITORY dan TAG = none
 
+Proses:
+
+- SSH
+- vim Dockerfile
+- Isi file :
+
+  FROM python:3.8-slim
+  
+  LABEL Name="Tazkia BTJ Academy Python App"
+  
+  LABEL Version="0.1.0"
+
+  RUN apt-get update && \
+    apt-get install -y git
+  
+  RUN git clone https://github.com/tazkiaathariza/BTJ-Academy.git .
+  
+  CMD ["python", "WhatToGetDone_Tazkia.py"]
+  
+- docker build -t tazkiapythonapp .
+- docker images
+
 ## 2. Jalankan image tersebut sebagai container dan berjalan pada port 8081
-Membuat container dengan docker run :
+Membuat container dengan docker run. Hasilnya adalah sebagai berikut:
 
 Container ID = f133ce1ee1b1
 
@@ -17,6 +39,9 @@ IMAGE = 7de1fb9af381
 COMMAND = "python3"
 
 NAME = tazkia
+
+Proses pembuatan :
+- docker run -it -d --name tazkia 7de1fb9af381
 
 ## 3. Berapakah IP docker container whoami?
 Berdasarkan docker inspeck, IP whoami adalah :
