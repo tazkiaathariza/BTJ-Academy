@@ -9,10 +9,13 @@
 ## No. 1 
 
 - SSH :
+    ```
     ssh tazkiaatharizadhivara@btj-academy.bangunindo.io
+    ```
+
 - Membuat file inventory
     ```
-    sudo nano inventory-tazkia.yaml :
+    sudo nano inventory-tazkia.yaml
     ```
 - Mengisi file inventory
 
