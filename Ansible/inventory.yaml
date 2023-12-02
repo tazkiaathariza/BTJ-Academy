@@ -1,0 +1,9 @@
+all:
+  vars:
+    docker_tag: 0.1.0
+    docker_image: inventory-tazkia
+  hosts:
+   btj-academy:
+      ansible_host: 10.184.0.100
+      ansible_user: tazkiaatharizadhivara
+      docker_port: 8081

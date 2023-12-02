@@ -1,0 +1,26 @@
+- name: Menjalankan container ubuntu Tazkia
+  hosts: btj-academy
+  become: true
+  tasks:
+
+    - name: Pull Docker Image
+      docker_image:
+        name: "{{ docker_image }}:{{ docker_tag }}"
+
+    - name: Run Docker container
+      docker_container:
+        name: container-tazkia
+        image: "{{ docker_image }}:{{ docker_tag }}"
+        state: started
+        interactive: true
+        tty: true
+        ports:
+         - "8081:8081"
+
+    - name: Create a test file
+      ansible.builtin.file:
+        path: /tmp/test
+        state: touch
+
+                                                                         
+
