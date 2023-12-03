@@ -5,7 +5,7 @@
 1. Membuat inventory dengan mendefinisikan daftar variables dan hosts
 2. Membuat playbook dengan task menjalankan docker container yang terdapat image, port, dan environment variables
 
-## Answer :
+## Answer 
 ## No. 1 
 
 - SSH :
@@ -62,8 +62,23 @@
     ```
 
 
-Menjalankan
+- Menjalankan
 
 ```
 ansible-playbook -i inventory-tazkia.yaml playbook.yaml
+```
+
+- Output (there's an error (permission denied), i'll try it again later)
+
+```
+PLAY [Menjalankan container ubuntu Tazkia] *********************************************************************************************************************************
+
+TASK [Gathering Facts] *****************************************************************************************************************************************************
+The authenticity of host '10.184.0.100 (10.184.0.100)' can't be established.
+ECDSA key fingerprint is SHA256:SunjbspAHiLhNruUh9QtGdbbtrSNZluZ9lkOofSGL6o.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+fatal: [btj-academy]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Warning: Permanently added '10.184.0.100' (ECDSA) to the list of known hosts.\r\ntazkiaatharizadhivara@10.184.0.100: Permission denied (publickey).", "unreachable": true}
+
+PLAY RECAP *****************************************************************************************************************************************************************
+btj-academy                : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0
 ```

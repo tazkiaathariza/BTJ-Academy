@@ -1,0 +1,6 @@
+{"activity": "Makan", "priority": "High", "status": "To Do"}
+{"activity": "Nonton", "priority": "Low", "status": "Finished"}
+{"activity": "Merapikan Rumah", "priority": "High", "status": "To Do"}
+{"activity": "Masak", "priority": "High", "status": "In Progress"}
+{"activity": "Nyuci", "priority": "Medium", "status": "Finished"}
+{"activity": "Belajar", "priority": "Medium", "status": "To Do"}

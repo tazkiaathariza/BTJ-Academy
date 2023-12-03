@@ -1,0 +1,5 @@
+{"activity": "makan", "deadline_time": "12.45", "status": true}
+{"activity": "Tidur", "deadline_time": "21.00", "status": false}
+{"activity": "Bersih2", "deadline_time": "07.00", "status": false}
+{"activity": "kerja", "deadline_time": "08.00", "status": true}
+{"activity": "Makan", "deadline_time": "2", "status": false}
